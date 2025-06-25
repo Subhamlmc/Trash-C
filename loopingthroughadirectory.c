@@ -32,7 +32,7 @@ int main() {
             FILE_ATTRIBUTE_NORMAL,
             NULL
         );
-
+// --file locker  -- will update this later during malware analysis --//
         if (hFile != INVALID_HANDLE_VALUE) {
             OVERLAPPED ol = {0};
             LockFileEx(hFile, LOCKFILE_EXCLUSIVE_LOCK, 0, 0xFFFFFFFF, 0xFFFFFFFF, &ol);
